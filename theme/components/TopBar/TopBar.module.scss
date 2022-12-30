@@ -1,0 +1,30 @@
+.TopBar {
+  background: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TopBar__Categories {
+    display: flex;
+  a {
+    padding: 20px 10px;
+    color: white;
+
+    &.activeCategory {
+      pointer-events: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.LanguageSelect {
+  display: flex;
+  a {
+      display: flex;
+      padding: 20px 10px;
+      &.activeLanguage {
+        pointer-events: none;
+        text-decoration: none;
+      }
+  }
+}
