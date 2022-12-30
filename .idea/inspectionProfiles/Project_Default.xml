@@ -1,0 +1,237 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssInvalidPropertyValue" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CssMissingSemicolon" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="[class]" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="amp-state" />
+            <item index="7" class="java.lang.String" itemvalue="amp-list" />
+            <item index="8" class="java.lang.String" itemvalue="amp-list-load-more" />
+            <item index="9" class="java.lang.String" itemvalue="amp-img" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://localhost" />
+          <option value="http://127.0.0.1" />
+          <option value="http://0.0.0.0" />
+          <option value="http://www.w3.org/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://java.sun.com/" />
+          <option value="http://xmlns.jcp.org/" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="3.9" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+            <item index="2" class="java.lang.String" itemvalue="3.11" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myAllPythons" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyNoneFunctionAssignmentInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="117">
+            <item index="0" class="java.lang.String" itemvalue="watchdog" />
+            <item index="1" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="2" class="java.lang.String" itemvalue="python-memcached" />
+            <item index="3" class="java.lang.String" itemvalue="django-extensions" />
+            <item index="4" class="java.lang.String" itemvalue="argh" />
+            <item index="5" class="java.lang.String" itemvalue="html5lib" />
+            <item index="6" class="java.lang.String" itemvalue="salad" />
+            <item index="7" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="8" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="9" class="java.lang.String" itemvalue="psycopg2" />
+            <item index="10" class="java.lang.String" itemvalue="Wand" />
+            <item index="11" class="java.lang.String" itemvalue="ssh" />
+            <item index="12" class="java.lang.String" itemvalue="versiontools" />
+            <item index="13" class="java.lang.String" itemvalue="meld3" />
+            <item index="14" class="java.lang.String" itemvalue="django-countries" />
+            <item index="15" class="java.lang.String" itemvalue="django-mptt-admin" />
+            <item index="16" class="java.lang.String" itemvalue="Pygments" />
+            <item index="17" class="java.lang.String" itemvalue="django-suit" />
+            <item index="18" class="java.lang.String" itemvalue="pyzmq" />
+            <item index="19" class="java.lang.String" itemvalue="django-piston" />
+            <item index="20" class="java.lang.String" itemvalue="docutils" />
+            <item index="21" class="java.lang.String" itemvalue="lxml" />
+            <item index="22" class="java.lang.String" itemvalue="Markdown" />
+            <item index="23" class="java.lang.String" itemvalue="fuzzywuzzy" />
+            <item index="24" class="java.lang.String" itemvalue="xlrd" />
+            <item index="25" class="java.lang.String" itemvalue="calculator-products-in-lists" />
+            <item index="26" class="java.lang.String" itemvalue="django-nose" />
+            <item index="27" class="java.lang.String" itemvalue="sure" />
+            <item index="28" class="java.lang.String" itemvalue="product-list-pages" />
+            <item index="29" class="java.lang.String" itemvalue="django-codemirror-widget" />
+            <item index="30" class="java.lang.String" itemvalue="django-singleton-admin" />
+            <item index="31" class="java.lang.String" itemvalue="sbits-plugins" />
+            <item index="32" class="java.lang.String" itemvalue="zope.interface" />
+            <item index="33" class="java.lang.String" itemvalue="django-appconf" />
+            <item index="34" class="java.lang.String" itemvalue="splinter" />
+            <item index="35" class="java.lang.String" itemvalue="full-text-search" />
+            <item index="36" class="java.lang.String" itemvalue="Pympler" />
+            <item index="37" class="java.lang.String" itemvalue="lettuce" />
+            <item index="38" class="java.lang.String" itemvalue="easy-thumbnails" />
+            <item index="39" class="java.lang.String" itemvalue="mechanize" />
+            <item index="40" class="java.lang.String" itemvalue="simplejson" />
+            <item index="41" class="java.lang.String" itemvalue="psutil" />
+            <item index="42" class="java.lang.String" itemvalue="p-cart-event-tracker" />
+            <item index="43" class="java.lang.String" itemvalue="odfpy" />
+            <item index="44" class="java.lang.String" itemvalue="django-mptt" />
+            <item index="45" class="java.lang.String" itemvalue="urwid" />
+            <item index="46" class="java.lang.String" itemvalue="django-autofixture" />
+            <item index="47" class="java.lang.String" itemvalue="mock" />
+            <item index="48" class="java.lang.String" itemvalue="pytils" />
+            <item index="49" class="java.lang.String" itemvalue="Fabric" />
+            <item index="50" class="java.lang.String" itemvalue="supervisor" />
+            <item index="51" class="java.lang.String" itemvalue="jsonfield" />
+            <item index="52" class="java.lang.String" itemvalue="slimit" />
+            <item index="53" class="java.lang.String" itemvalue="requests" />
+            <item index="54" class="java.lang.String" itemvalue="pycrypto" />
+            <item index="55" class="java.lang.String" itemvalue="django-filer" />
+            <item index="56" class="java.lang.String" itemvalue="ipdb" />
+            <item index="57" class="java.lang.String" itemvalue="selenium" />
+            <item index="58" class="java.lang.String" itemvalue="snippets" />
+            <item index="59" class="java.lang.String" itemvalue="zope.event" />
+            <item index="60" class="java.lang.String" itemvalue="Cython" />
+            <item index="61" class="java.lang.String" itemvalue="django-picklefield" />
+            <item index="62" class="java.lang.String" itemvalue="nose-progressive" />
+            <item index="63" class="java.lang.String" itemvalue="Utm-urls-support" />
+            <item index="64" class="java.lang.String" itemvalue="coverage" />
+            <item index="65" class="java.lang.String" itemvalue="nose" />
+            <item index="66" class="java.lang.String" itemvalue="django-datetime-widget" />
+            <item index="67" class="java.lang.String" itemvalue="django-supervisor" />
+            <item index="68" class="java.lang.String" itemvalue="six" />
+            <item index="69" class="java.lang.String" itemvalue="raven" />
+            <item index="70" class="java.lang.String" itemvalue="phonenumbers" />
+            <item index="71" class="java.lang.String" itemvalue="rootfiles" />
+            <item index="72" class="java.lang.String" itemvalue="price-navigator" />
+            <item index="73" class="java.lang.String" itemvalue="BeautifulSoup" />
+            <item index="74" class="java.lang.String" itemvalue="Django-Select2" />
+            <item index="75" class="java.lang.String" itemvalue="South" />
+            <item index="76" class="java.lang.String" itemvalue="ipython" />
+            <item index="77" class="java.lang.String" itemvalue="django-smuggler" />
+            <item index="78" class="java.lang.String" itemvalue="django-compressor" />
+            <item index="79" class="java.lang.String" itemvalue="django-debug-toolbar" />
+            <item index="80" class="java.lang.String" itemvalue="odict" />
+            <item index="81" class="java.lang.String" itemvalue="message-sender" />
+            <item index="82" class="java.lang.String" itemvalue="PIL" />
+            <item index="83" class="java.lang.String" itemvalue="pathtools" />
+            <item index="84" class="java.lang.String" itemvalue="Django" />
+            <item index="85" class="java.lang.String" itemvalue="django-json-field" />
+            <item index="86" class="java.lang.String" itemvalue="pudb" />
+            <item index="87" class="java.lang.String" itemvalue="django-suit-ckeditor" />
+            <item index="88" class="java.lang.String" itemvalue="zope.schema" />
+            <item index="89" class="java.lang.String" itemvalue="django-postal" />
+            <item index="90" class="java.lang.String" itemvalue="pytz" />
+            <item index="91" class="java.lang.String" itemvalue="soaplib" />
+            <item index="92" class="java.lang.String" itemvalue="ply" />
+            <item index="93" class="java.lang.String" itemvalue="zope.testbrowser" />
+            <item index="94" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="95" class="java.lang.String" itemvalue="traitlets" />
+            <item index="96" class="java.lang.String" itemvalue="django-bootstrap3" />
+            <item index="97" class="java.lang.String" itemvalue="decorator" />
+            <item index="98" class="java.lang.String" itemvalue="ipython-genutils" />
+            <item index="99" class="java.lang.String" itemvalue="ptyprocess" />
+            <item index="100" class="java.lang.String" itemvalue="pickleshare" />
+            <item index="101" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="102" class="java.lang.String" itemvalue="wcwidth" />
+            <item index="103" class="java.lang.String" itemvalue="pexpect" />
+            <item index="104" class="java.lang.String" itemvalue="simplegeneric" />
+            <item index="105" class="java.lang.String" itemvalue="Pillow" />
+            <item index="106" class="java.lang.String" itemvalue="solid-i18n" />
+            <item index="107" class="java.lang.String" itemvalue="pylibmc" />
+            <item index="108" class="java.lang.String" itemvalue="pkg-resources" />
+            <item index="109" class="java.lang.String" itemvalue="rjsmin" />
+            <item index="110" class="java.lang.String" itemvalue="django-dbsettings" />
+            <item index="111" class="java.lang.String" itemvalue="django-modeltranslation" />
+            <item index="112" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="113" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="114" class="java.lang.String" itemvalue="django-rq" />
+            <item index="115" class="java.lang.String" itemvalue="redis" />
+            <item index="116" class="java.lang.String" itemvalue="rq" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Changed Files" level="WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="sshop.lfs.core.management.commands.sshop_update.lfs" />
+          <option value="libs.pcart_api.serializers.MetaDataSerializerMixin.instance" />
+          <option value="checkout.views.BuyProductView.request" />
+          <option value="checkout.views.BaseCheckoutView.request" />
+          <option value="yas_db_migrations.lfs" />
+          <option value="klinika.mixins.AjaxPaginationMixin.kwargs" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="Pylint" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Stylelint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
