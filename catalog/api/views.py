@@ -9,11 +9,18 @@ from catalog.models import Product, Category
 
 from time import sleep
 
+
+class SleepMixin:
+    def dispatch(self, request, *args, **kwargs):
+        sleep(5)
+        return super().dispatch(request, *args, **kwargs)
+
+
 class ProductsPagination(PageNumberPagination):
     page_size = 20
 
 
-class CategoryProductsAPIView(ListAPIView):
+class CategoryProductsAPIView(SleepMixin, ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductListSerializer
     pagination_class = ProductsPagination
@@ -23,35 +30,23 @@ class CategoryProductsAPIView(ListAPIView):
             category = Category.objects.get(slug=self.kwargs['slug'])
         except Category.DoesNotExist:
             raise Http404
-        sleep(0)
         return self.queryset.filter(category=category)
 
 
-class ProductRetrieveAPIView(RetrieveAPIView):
-    lookup_url_kwarg = 'slug'
-    serializer_class = ProductDetailSerializer
-    queryset = Product.objects.all()
-
-    def get(self, *args, **kwargs):
-        sleep(0)
-        return super().get(*args, **kwargs)
-
-
-class CategoryListAPIVIew(ListAPIView):
+class CategoryListAPIVIew(SleepMixin, ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-    def get(self, *args, **kwargs):
-        sleep(0)
-        return super().get(*args, **kwargs)
 
-
-class CategoryRetrieveAPIView(RetrieveAPIView):
+class CategoryRetrieveAPIView(SleepMixin, RetrieveAPIView):
     lookup_url_kwarg = 'slug'
     lookup_field = 'slug'
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
-    def get(self, *args, **kwargs):
-        sleep(0)
-        return super().get(*args, **kwargs)
+
+class ProductRetrieveAPIView(SleepMixin, RetrieveAPIView):
+    lookup_url_kwarg = 'slug'
+    lookup_field = 'slug'
+    serializer_class = ProductDetailSerializer
+    queryset = Product.objects.all()

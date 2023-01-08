@@ -41,6 +41,7 @@ class Command(BaseCommand):
             categories.append(Category(name=c_name, slug=slugify(c_name)))
         categories = Category.objects.bulk_create(categories)
         products = []
+        used = set()
         for i in range(500000):
             brand = random.choice(config['brands'])
             category = random.choice(categories)
@@ -48,9 +49,13 @@ class Command(BaseCommand):
             height = random.choice(config['heights'])
             diameter = random.choice(config['diameters'])
             name = f'{brand} {category.name.title()} {width}/{height} {diameter}'
+            slug = slugify(name)
+            if slug in used:
+                continue
+            used.add(slug)
             products.append(Product(
                 name=name,
-                slug=slugify(name),
+                slug=slug,
                 category=category
             ))
         Product.objects.bulk_create(products, batch_size=1000)

@@ -17,11 +17,11 @@ function Product({ product }) {
   </div>
 }
 
-function Products({ products  }) {
+function Products({ products }) {
   // const router = useRouter();
   return (
       <div className={`${styles.Products}`}>
-        {products.results.map(( product ) => <Product key={product.id} product={product}/>)}
+        {products && products.results.map(( product ) => <Product key={product.id} product={product}/>)}
       </div>
   )
 }

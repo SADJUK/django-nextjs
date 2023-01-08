@@ -6,10 +6,6 @@ from catalog.api.views import (
 
 urlpatterns = [
     path(
-        'product/<slug:slug>',
-        ProductRetrieveAPIView.as_view(),
-    ),
-    path(
         'categories',
         CategoryListAPIVIew.as_view()
     ),
@@ -21,4 +17,8 @@ urlpatterns = [
         'categories/<slug:slug>/products',
         CategoryProductsAPIView.as_view(),
     ),
+    path(
+        'product/<slug:slug>',
+        ProductRetrieveAPIView.as_view()
+    )
 ]

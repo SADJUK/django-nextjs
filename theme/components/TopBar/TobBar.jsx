@@ -2,26 +2,27 @@
 import React, {Fragment} from 'react';
 import styles from './TopBar.module.scss'
 import Link from "next/link";
-// import {useRouter} from "next/router";
+import {useRouter} from "next/router";
 import {useTranslation} from "next-i18next";
+import PropTypes from "prop-types";
 
-// function LanguageSelect() {
-//   const router = useRouter()
-//   return <div className={styles.LanguageSelect}>
-//     {
-//       router.locales.map((locale) => {
-//         return <Link
-//           key={locale}
-//           href={router.asPath}
-//           locale={locale}
-//           className={locale === router.locale ? styles.activeLanguage: ''}
-//         >
-//           {locale}
-//         </Link>
-//       })
-//     }
-//   </div>
-// }
+function LanguageSelect() {
+  const router = useRouter()
+  return <div className={styles.LanguageSelect}>
+    {
+      router.locales.map((locale) => {
+        return <Link
+          key={locale}
+          href={router.asPath}
+          locale={locale}
+          className={locale === router.locale ? styles.activeLanguage: ''}
+        >
+          {locale}
+        </Link>
+      })
+    }
+  </div>
+}
 
 
 function Categories({ categories, activeCategory }) {
@@ -47,7 +48,12 @@ export default function TobBar({categories, activeCategory = null}) {
     <span>{t('title')}</span>
     <div className={styles.TopBar}>
       <Categories categories={categories} activeCategory={activeCategory}/>
-      {/*<LanguageSelect/>*/}
+      <LanguageSelect/>
     </div>
   </Fragment>
+}
+
+TobBar.propTypes = {
+  'categories': PropTypes.array.isRequired,
+  'active': PropTypes.bool
 }
