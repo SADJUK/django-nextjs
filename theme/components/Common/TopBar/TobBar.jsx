@@ -1,25 +1,25 @@
-"use client";
 import React, {Fragment} from 'react';
 import styles from './TopBar.module.scss'
-import Link from "next/link";
-import {useRouter} from "next/router";
-import {useTranslation} from "next-i18next";
+import {useRouter} from "next/navigation";
+// import {useTranslation} from "next-i18next";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 function LanguageSelect() {
-  const router = useRouter()
+  const router = useRouter();
+  console.log(router)
   return <div className={styles.LanguageSelect}>
     {
-      router.locales.map((locale) => {
-        return <Link
-          key={locale}
-          href={router.asPath}
-          locale={locale}
-          className={locale === router.locale ? styles.activeLanguage: ''}
-        >
-          {locale}
-        </Link>
-      })
+      // router.locales.map((locale) => {
+      //   return <Link
+      //     key={locale}
+      //     href={router.asPath}
+      //     locale={locale}
+      //     className={locale === router.locale ? styles.activeLanguage: ''}
+      //   >
+      //     {locale}
+      //   </Link>
+      // })
     }
   </div>
 }
@@ -42,13 +42,13 @@ function Categories({ categories, activeCategory }) {
 }
 
 
-export default function TobBar({categories, activeCategory = null}) {
-  const { t } = useTranslation('top-bar');
+export default async function TobBar({categories, activeCategory = null}) {
+  // const { t } = useTranslation('top-bar');
   return <Fragment>
-    <span>{t('title')}</span>
+    {/*<span>{t('title')}</span>*/}
     <div className={styles.TopBar}>
       <Categories categories={categories} activeCategory={activeCategory}/>
-      <LanguageSelect/>
+      {/*<LanguageSelect/>*/}
     </div>
   </Fragment>
 }

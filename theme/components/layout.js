@@ -1,10 +1,10 @@
-import TobBar from "./TopBar";
+import TopBar from "./Common/TopBar";
 
 export default function Layout({ children, categories }) {
 
   return (
     <>
-      <TobBar categories={categories} />
+      <TopBar categories={categories} />
       <main>{children}</main>
     </>
   )

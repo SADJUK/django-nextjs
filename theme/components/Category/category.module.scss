@@ -1,0 +1,21 @@
+@import "./filters.module";
+
+.Category {
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    width: 100%;
+  }
+}
+
+.Category__left {
+  width: 300px;
+}
+
+.Category__middle {
+  max-width: 860px;
+}
+
+.Category__content {
+  display: flex;
+}

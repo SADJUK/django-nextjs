@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from './products.module.scss';
-import placeholder200x200 from '../../styles/placeholders/200x200.png';
-import { useRouter } from "next/navigation";
+import styles from './mobile-products.module.scss';
+import placeholder200x200 from '../../../styles/placeholders/200x200.png';
 
 function Product({ product }) {
   return <div className={`${ styles.Product }`}>
@@ -17,8 +16,7 @@ function Product({ product }) {
   </div>
 }
 
-function Products({ products }) {
-  // const router = useRouter();
+function MobileProducts({ products }) {
   return (
       <div className={`${styles.Products}`}>
         {products && products.results.map(( product ) => <Product key={product.id} product={product}/>)}
@@ -26,4 +24,4 @@ function Products({ products }) {
   )
 }
 
-export default Products;
+export default MobileProducts;

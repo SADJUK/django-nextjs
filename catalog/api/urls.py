@@ -1,7 +1,7 @@
 from django.urls import path
 from catalog.api.views import (
     ProductRetrieveAPIView, CategoryProductsAPIView, CategoryListAPIVIew,
-    CategoryRetrieveAPIView
+    CategoryRetrieveAPIView, FiltersAPIVIew
 )
 
 urlpatterns = [
@@ -14,11 +14,15 @@ urlpatterns = [
         CategoryRetrieveAPIView.as_view()
     ),
     path(
+        'categories/<slug:slug>/filters',
+        FiltersAPIVIew.as_view()
+    ),
+    path(
         'categories/<slug:slug>/products',
         CategoryProductsAPIView.as_view(),
     ),
     path(
         'product/<slug:slug>',
         ProductRetrieveAPIView.as_view()
-    )
+    ),
 ]

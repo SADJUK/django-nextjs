@@ -1,0 +1,25 @@
+.Product {
+  width: 200px;
+}
+
+.Products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: space-between;
+  grid-gap: 20px;
+  max-width: inherit;
+}
+.Pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.PaginationItem {
+  margin: 0 2px 0 2px;
+  &.active a {
+    pointer-events: none;
+    text-decoration: none;
+    color: black;
+  }
+}

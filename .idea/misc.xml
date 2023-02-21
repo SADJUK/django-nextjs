@@ -6,5 +6,5 @@
   <component name="PreferredVcsStorage">
     <preferredVcsName>ApexVCS</preferredVcsName>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (django-nextjs)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (env_djangoSSR)" project-jdk-type="Python SDK" />
 </project>
